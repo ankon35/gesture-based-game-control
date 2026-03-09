@@ -1,65 +1,57 @@
-# 🎮 HILL CLIMB RACING – GESTURE CONTROLLED USING COMPUTER VISION
+# 🎮 Hill Climb Racing – Gesture Controlled with Computer Vision
 
-This project implements **real-time gesture-based control** for Hill Climb Racing using Computer Vision techniques.
+![Python](https://img.shields.io/badge/Python-3.9+-blue?logo=python)
+![OpenCV](https://img.shields.io/badge/OpenCV-4.5+-green?logo=opencv)
+![MediaPipe](https://img.shields.io/badge/MediaPipe-0.10+-orange)
+![PyAutoGUI](https://img.shields.io/badge/PyAutoGUI-0.9+-red)
 
-Instead of using keyboard input, the game is controlled through **hand gestures detected via webcam**.
+Control **Hill Climb Racing** with just your **hand gestures**! 🖐️  
+No keyboard needed—your webcam becomes the controller.
 
-The system captures live video using **OpenCV** and detects hand landmarks using **MediaPipe**.
-
-Based on predefined finger positions and landmark coordinate comparisons, gestures are mapped to game actions:
-
-✋ **Gesture 1 → ACCELERATE**
-✋ **Gesture 2 → BRAKE**
-
-The gesture recognition is implemented using **rule-based coordinate logic**.
+![Demo GIF](https://github.com/yourusername/hill-climb-gesture-control/assets/demo.gif)
 
 ---
 
-# 🛠 TECH STACK (Library used)
-
-* PYTHON
-* OPENCV (CV2)
-* MEDIAPIPE
-* NUMPY
-* TIME
+## 🎯 Gestures
+- ✋ **Open hand → ACCELERATE**  
+- ✊ **Closed hand → BRAKE**  
 
 ---
 
-# ⚙️ HOW IT WORKS
-
-1️⃣ Webcam captures real-time video frames.
-
-2️⃣ Each frame is processed using OpenCV.
-
-3️⃣ MediaPipe detects **21 hand landmarks**.
-
-4️⃣ Landmark coordinates are extracted.
-
-5️⃣ Gesture logic is applied using relative coordinate comparison.
-
-6️⃣ Corresponding key action is triggered in the game.
-
-The system runs in **real time with minimal latency**.
+## 🛠 Tech Stack
+- Python  
+- OpenCV (cv2)  
+- MediaPipe  
+- PyAutoGUI  
+- NumPy  
+- Time  
 
 ---
 
-# 🧠 CORE CONCEPTS USED
+## ⚙️ How It Works
+1️⃣ Webcam captures live video frames.  
+2️⃣ OpenCV processes each frame in real-time.  
+3️⃣ MediaPipe detects **21 hand landmarks**.  
+4️⃣ NumPy extracts landmark coordinates.  
+5️⃣ Rule-based logic determines which gesture is made.  
+6️⃣ PyAutoGUI triggers the corresponding action in the game.  
 
-* REAL-TIME IMAGE PROCESSING
-* HAND LANDMARK DETECTION
-* COORDINATE GEOMETRY USING NUMPY
-* RULE-BASED GESTURE RECOGNITION
-* HUMAN-COMPUTER INTERACTION (HCI)
+✅ Real-time performance ensures smooth, responsive gameplay.
 
 ---
 
-# 🚀 INSTALLATION
+## 🧠 Key Concepts
+- Real-Time Image Processing  
+- Hand Landmark Detection  
+- Rule-Based Gesture Recognition  
+- Coordinate Geometry with NumPy  
+- Human-Computer Interaction (HCI)  
 
-```
+---
+
+## 🚀 Installation & Run
+```bash
 git clone https://github.com/jiyajahnavi/hill-climb-gesture-control.git
 cd hill-climb-gesture-control
 pip install -r requirements.txt
 python main.py
-```
-
----
