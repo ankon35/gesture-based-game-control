@@ -51,7 +51,8 @@ No keyboard needed—your webcam becomes the controller.
 
 ## 🚀 Installation & Run
 ```bash
-git clone https://github.com/jiyajahnavi/hill-climb-gesture-control.git
-cd hill-climb-gesture-control
+https://github.com/ankon35/gesture-based-game-control.git
+cd gesture-based-game-control
 pip install -r requirements.txt
 python main.py
+
